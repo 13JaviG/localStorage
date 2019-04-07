@@ -38,8 +38,6 @@ this.addEventListener('fetch', event => {
         event.respondWith(
           fetch(createCacheBustedRequest(event.request.url)).catch(error => {
               // Return the offline page
-			  var elemento = document.getElementById("online");
-				  elemento.innerHTML = 'OFFLINE';
               return caches.match(offlineUrl);
           })
     );
