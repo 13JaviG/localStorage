@@ -25,8 +25,7 @@ this.addEventListener('install', event => {
     caches.open(currentCache.offline).then(function(cache) {
       return cache.addAll([
           offlineUrl,
-	  'juego.js',
-	  'index.html'
+	  'juego.js'
       ]);
     })
   );
