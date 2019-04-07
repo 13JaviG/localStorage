@@ -7,7 +7,7 @@ var currentCache = {
 const offlineUrl = 'postits.html';
 
 function createCacheBustedRequest(url){
-	let request = new Request(url, {cache: 'reload'}):
+	let request = new Request(url, {cache: 'reload'});
 	
 	if ('cache' in request) {
 		
